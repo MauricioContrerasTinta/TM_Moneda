@@ -11,7 +11,7 @@
         android:id="@+id/editTextText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Ingrese cantidad a convertir"
+        android:hint="Ingrese una cantidad válida"
         android:inputType="numberDecimal|numberSigned"
         android:layout_marginTop="40dp"
         android:backgroundTint="#00BCD4"
@@ -25,7 +25,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="24dp"
         android:orientation="vertical"
-        android:background="#FFEB3B"
+        android:background="#87CEEB"
         app:layout_constraintTop_toBottomOf="@id/editTextText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -35,14 +35,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="A soles" />
+            android:text="Convertir a soles" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="A dólares" />
+            android:text="Convertir a dólares" />
     </RadioGroup>
 
     <Button
@@ -52,9 +52,10 @@
         android:layout_marginTop="32dp"
         android:text="Calcular"
         android:onClick="miClicManejador"
-        android:backgroundTint="#673AB7"
+        android:backgroundTint="#673AAF"
         app:layout_constraintTop_toBottomOf="@id/radioGroup1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

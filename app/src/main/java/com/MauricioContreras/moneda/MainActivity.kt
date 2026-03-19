@@ -40,15 +40,12 @@ class MainActivity : AppCompatActivity() {
             radioDolares.isChecked -> {
                 val soles = convierteDolaresASoles(cantidad)
                 mostrarResultado("%.2f dólares = %.2f soles".format(cantidad, soles))
-                radioDolares.isChecked = false
-                radioSoles.isChecked = true
             }
 
             radioSoles.isChecked -> {
                 val dolares = convierteSolesADolares(cantidad)
                 mostrarResultado("%.2f soles = %.2f dólares".format(cantidad, dolares))
-                radioSoles.isChecked = false
-                radioDolares.isChecked = true
+
             }
 
             else -> {
